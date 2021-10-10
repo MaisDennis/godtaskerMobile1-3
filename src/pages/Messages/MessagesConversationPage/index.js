@@ -476,7 +476,7 @@ export default function MessagesConversationPage({ navigation, route }) {
           )}
         </MessageContainer>
       </LineView>
-      <HrLine/>
+      {/* <HrLine/> */}
     </AlignView>
   );
   // ---------------------------------------------------------------------------

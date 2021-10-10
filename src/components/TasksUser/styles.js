@@ -9,7 +9,8 @@ export const AlignCheckBoxView = styled.View`
   flex-direction:column;
   align-items: flex-start;
   width: 100%;
-  /* background-color: #ee4; */
+  margin: ${Platform.OS === 'ios' ? '4px 0' : '0'};
+  background-color: #ee4;
 `;
 
 export const AlignDetailsView = styled.View`
@@ -62,7 +63,7 @@ export const BottomHeaderView = styled.View`
 `;
 
 export const ButtonText = styled.Text`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin: auto;
   color: #fff;
@@ -149,18 +150,19 @@ export const DescriptionBorderView = styled.View`
   align-items: center;
   min-height: 44px;
   width: 100%;
-  padding: 4px;
   border-width: 1px;
   border-color: #ccc;
   border-radius: 8px;
-  background-color: #f5f5f5;
+  padding: 8px;
+  padding-bottom: 24px;
   margin: 8px 0;
+  background-color: #f5f5f5;
   /* background-color: #f00; */
 `;
 
 export const DescriptionSpan = styled.Text`
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   text-align: justify;
   line-height: 20px;
   max-width: 85%;
@@ -184,7 +186,7 @@ export const DueTimeView = styled.View`
 `;
 export const DueTime = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
 `;
 
 export const FormScrollView = styled.ScrollView.attrs({
@@ -224,14 +226,14 @@ export const InnerStatusView = styled(LinearGradient)`
 
 export const Label = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 8px;
   color: #000;
 `;
 
 export const LabelInitiated = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 32px;
   max-width: 60px;
   color: #19AE7C;
@@ -239,7 +241,7 @@ export const LabelInitiated = styled.Text`
 
 export const LabelEnded = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 4px;
   max-width: 60px;
   color: ${props => props.pastDueDate === true ? '#AE1919' : '#19AE7C'};
@@ -268,7 +270,7 @@ export const ModalView = styled.View`
 
 export const NameText = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   color: #222;
   /* background-color: #4433ee; */
 `;
@@ -297,9 +299,10 @@ border-radius: 4px;
 padding: 0 12px;
 background: ${props => props.initiated === null ? '#ddd' : '#D0ECE3'};
 `;
+
 export const StartTime = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
 `;
 
 export const TaskAttributesView = styled.View`
@@ -335,7 +338,7 @@ color: #19AE7C;
 
 export const TitleText = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   width: 100%;
   color: #19AE7C;
   width: auto;
@@ -344,7 +347,7 @@ export const TitleText = styled.Text`
 
 export const TitleTextModal = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '17px' : '16px'};
+  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
   width: auto;
   text-align: left;
   color: #19AE7C;
@@ -383,13 +386,13 @@ export const TagView = styled.View`
 `;
 export const Time = styled.Text`
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   color: ${props => props.pastDueDate === true ? '#f64C75' : '#19AE7C'};
 `;
 
 export const ToText = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 8px;
   color: #222;
 

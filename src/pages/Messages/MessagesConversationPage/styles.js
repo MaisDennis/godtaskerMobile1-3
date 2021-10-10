@@ -11,7 +11,7 @@ display: flex;
 flex-direction: column;
 width: 100%;
 background-color: #fff;
-/* background-color: #665544; */
+background-color: #FFFCB6;
 `;
 
 export const BodyView = styled.View`
@@ -184,6 +184,7 @@ export const MessageListView = styled.View`
 `;
 
 export const MessageText = styled.Text`
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   font-style: ${
     props => props.removedMessage ? 'italic' : 'normal'
   };
@@ -194,8 +195,9 @@ export const MessageText = styled.Text`
   padding: 0 4px;
   /* background-color: #666; */
 `;
+
 export const MessageTime = styled.Text`
-font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
+font-size: ${Platform.OS === 'ios' ? '11px' : '10px'};
 max-width: 70px;
 width: auto;
 margin: 4px;

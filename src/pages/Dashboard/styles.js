@@ -42,7 +42,7 @@ export const BlockLargeBoss = styled.View`
   margin: 0;
   padding: 8px 0;
   /* background-color: #f5f5f5; */
-  background-color: #4ee;
+  /* background-color: #4ee; */
 `;
 
 export const BlockLargeWorker = styled.View`
@@ -55,10 +55,9 @@ export const BlockLargeWorker = styled.View`
   border-width: 1px;
   border-color: #334466;
   margin: 0;
-  padding: 8px;
-
+  padding: 8px 0;
   /* background-color: #f5f5f5; */
-  /* background-color: #4ee; */
+  /* background-color: #f00; */
 `;
 
 export const BlockSegment = styled.View`
@@ -70,7 +69,7 @@ export const BlockSegment = styled.View`
   /* padding: 8px; */
 
   /* background-color: #f5f5f5; */
-  background-color: #ee3;
+  /* background-color: #ee3; */
 `;
 
 export const BlockSmallBoss = styled.View`
@@ -153,6 +152,7 @@ export const DateText = styled.Text`
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   text-align: center;
   margin: auto 20px;
   color: #000;
@@ -322,7 +322,7 @@ export const LabelBoldSocialMedia = styled.Text`
 
 export const LabelBoldWorker = styled.Text`
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   margin: 0 10%;
   color: #334466;
@@ -332,9 +332,9 @@ export const LabelBoldWorker = styled.Text`
 export const LabelBoldWorker2 = styled.Text`
   width: 24px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  margin: 0 22px;
+  margin: 0 auto;
   color: #334466;
   /* background-color: #999; */
 `;
@@ -366,7 +366,7 @@ export const LabelNormalSocialMedia = styled.Text`
 
 export const LabelNormalWorker = styled.Text`
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   margin: 2px 0;
   color: #334466;
   /* background-color: #4ee; */
@@ -376,8 +376,6 @@ export const LabelSmallBoss = styled.Text`
   text-align: center;
   font-size: 8px;
   width: 56px;
-  /* margin: 1px 12px; */
-  /* margin: 0 4px; */
   color: #009966;
   /* background-color: #4ee; */
 `;
@@ -387,8 +385,6 @@ export const LabelSmallBoss2 = styled.Text`
   font-size: 8px;
   font-weight: bold;
   width: 56px;
-  /* margin: 1px 12px; */
-  /* margin: 0 4px; */
   color: #009966;
   /* background-color: #4ee; */
 `;
@@ -408,21 +404,17 @@ export const LabelSmallSpace = styled.Text`
 
 export const LabelSmallWorker = styled.Text`
   text-align: center;
-  font-size: 12px;
-  width: 60px;
-  /* margin: 1px 12px; */
-  margin: 0 4px;
+  font-size: 8px;
+  width: 56px;
   color: #334466;
   /* background-color: #4ee; */
 `;
 
 export const LabelSmallWorker2 = styled.Text`
   text-align: center;
-  font-size: 12px;
+  font-size: 8px;
   font-weight: bold;
-  width: 60px;
-  /* margin: 1px 12px; */
-  margin: 0 4px;
+  width: 56px;
   color: #334466;
   /* background-color: #4ee; */
 `;
@@ -553,7 +545,7 @@ export const StatusLineBoss = styled.View`
 `;
 
 export const StatusLineWorker = styled.View`
-  width: 60px;
+  width: 56px;
   border-width: 0.5px;
   border-color: #334466;
   margin: 0 auto;

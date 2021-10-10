@@ -101,7 +101,7 @@ export const ButtonView = styled(TouchableOpacity)`
   /* background: #f4f; */
 `;
 export const ButtonText = styled.Text`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin: auto;
   color: #fff;
@@ -190,18 +190,19 @@ export const DescriptionBorderView = styled.View`
   align-items: center;
   min-height: 44px;
   width: 100%;
-  padding: 4px;
   border-width: 1px;
   border-color: #ccc;
   border-radius: 8px;
-  background-color: #f5f5f5;
+  padding: 8px;
+  padding-bottom: 24px;
   margin: 8px 0;
+  background-color: #f5f5f5;
   /* background-color: #f00; */
 `;
 
 export const DescriptionSpan = styled.Text`
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   text-align: justify;
   line-height: 20px;
   max-width: 85%;
@@ -234,9 +235,10 @@ export const DueTimeView = styled.View`
   padding: 0 12px;
   background: ${props => props.pastDueDate == true ? '#EBA5A5' : '#D0ECE3'};
 `;
+
 export const DueTime = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
 `;
 
 export const FormScrollView = styled.ScrollView.attrs({
@@ -305,14 +307,14 @@ export const InnerStatusView = styled(LinearGradient)`
 
 export const Label = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 8px;
   color: #000;
 `;
 
 export const LabelInitiated = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 32px;
   max-width: 60px;
   color: #19AE7C;
@@ -320,7 +322,7 @@ export const LabelInitiated = styled.Text`
 
 export const LabelEnded = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 4px;
   max-width: 60px;
   color: ${props => props.pastDueDate === true ? '#f64C75' : '#19AE7C'};
@@ -347,7 +349,7 @@ export const ModalView = styled.View`
 `;
 export const ModalText = styled.Text`
   font-weight: bold;
-  font-size: 14px;
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin: 16px auto 8px;
   color: #222;
   /* background-color: #f00; */
@@ -355,7 +357,7 @@ export const ModalText = styled.Text`
 
 export const NameText = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   color: #222;
 `;
 
@@ -409,7 +411,7 @@ background: ${props => props.initiated === null ? '#ddd' : '#D0ECE3'};
 
 export const StartTime = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
 `;
 
 export const TagView = styled.View`
@@ -418,11 +420,12 @@ export const TagView = styled.View`
   align-items: center;
   /* background-color: #4433ee; */
 `;
-export const Time = styled.Text`
-  font-weight: bold;
-  font-size: 14px;
-  color: ${props => props.pastDueDate === true ? '#f64C75' : '#19AE7C'};
-`;
+
+// export const Time = styled.Text`
+//   font-weight: bold;
+//   font-size: 14px;
+//   color: ${props => props.pastDueDate === true ? '#f64C75' : '#19AE7C'};
+// `;
 
 export const TitleView = styled.View`
     display: flex;
@@ -473,13 +476,13 @@ export const TitleIcon = styled(Icon)`
 `;
 export const TitleText = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   color: #334466;
 `;
 
 export const TitleTextModal = styled.Text`
   font-weight: bold;
-  font-size: ${Platform.OS === 'ios' ? '17px' : '16px'};
+  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
   width: auto;
   text-align: left;
   color: #334466;
@@ -488,7 +491,7 @@ export const TitleTextModal = styled.Text`
 
 export const ToText = styled.Text`
   font-weight: normal;
-  font-size: ${Platform.OS === 'ios' ? '15px' : '14px'};
+  font-size: ${Platform.OS === 'ios' ? '13px' : '12px'};
   margin-right: 8px;
   color: #222;
 

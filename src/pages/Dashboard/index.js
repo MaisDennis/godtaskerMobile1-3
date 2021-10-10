@@ -24,7 +24,7 @@ import {
   LabelSmallWorker, LabelSmallWorker2, LabelSpace,
   LinkedInWrapper,
   ModalView,
-  SearchBarTextInput, SocialMediaButton, SocialMediaView,
+  SearchBarTextInput, SocialMediaButton, SocialMediaText, SocialMediaView,
   SocialMediaWrapper, SpaceView,
   StatusCircleBoss, StatusCircleRed, StatusCircleWorker,
   StatusLineBoss, StatusLineWorker, StatusView,
@@ -315,13 +315,13 @@ export default function Dashboard({ navigation }) {
               <SocialMediaButton onPress={handleToggleInstagram}>
                 <Iicon name='instagram' size={20}/>
               </SocialMediaButton>
-              <BioText>{userInstagram}</BioText>
+              <SocialMediaText>{userInstagram}</SocialMediaText>
             </SocialMediaView>
             <SocialMediaView>
               <SocialMediaButton onPress={handleToggleLinkedIn}>
                 <Iicon name='linkedin' size={20}/>
               </SocialMediaButton>
-              <BioText>{userLinkedIn}</BioText>
+              <SocialMediaText>{userLinkedIn}</SocialMediaText>
             </SocialMediaView>
           </SocialMediaWrapper>
         </ContentView>
@@ -427,6 +427,7 @@ export default function Dashboard({ navigation }) {
           <StatusView>
             <Label>Jobs Status:</Label>
           </StatusView>
+
           <StatusView>
             <BlockSmallWorker>
               <LabelBoldWorker>
@@ -474,25 +475,25 @@ export default function Dashboard({ navigation }) {
                     ? workerCountOverDue
                     : '-'
                   }
-                </LabelBoldRed>
+                </LabelBoldRed><LabelSpace/>
                 <LabelBoldWorker2>
                   { workerCountTodayDue !== 0
                     ? workerCountTodayDue
                     : '-'
                   }
-                </LabelBoldWorker2>
+                </LabelBoldWorker2><LabelSpace/>
                 <LabelBoldWorker2>
                   { workerCountTomorrowDue !== 0
                     ? workerCountTomorrowDue
                     : '-'
                   }
-                </LabelBoldWorker2>
+                </LabelBoldWorker2><LabelSpace/>
                 <LabelBoldWorker2>
                   { workerCountThisWeekDue !== 0
                     ? workerCountThisWeekDue
                     : '-'
                   }
-                </LabelBoldWorker2>
+                </LabelBoldWorker2><LabelSpace/>
                 <LabelBoldWorker2>
                   { workerCountInitiated !== 0
                     ? workerCountInitiated
@@ -508,10 +509,10 @@ export default function Dashboard({ navigation }) {
                 <StatusCircleWorker/>
               </BlockSegment>
               <BlockSegment>
-                <LabelSmallRed>overdue</LabelSmallRed>
-                <LabelSmallWorker2>due today</LabelSmallWorker2>
-                <LabelSmallWorker>tomorrow</LabelSmallWorker>
-                <LabelSmallWorker>this week</LabelSmallWorker>
+                <LabelSmallRed>overdue</LabelSmallRed><LabelSmallSpace/>
+                <LabelSmallWorker2>due today</LabelSmallWorker2><LabelSmallSpace/>
+                <LabelSmallWorker>tomorrow</LabelSmallWorker><LabelSmallSpace/>
+                <LabelSmallWorker>this week</LabelSmallWorker><LabelSmallSpace/>
                 <LabelSmallWorker2>Total</LabelSmallWorker2>
               </BlockSegment>
             </BlockLargeWorker>
